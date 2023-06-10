@@ -8,7 +8,7 @@ def create_table(table_name):
     dynamodb = boto3.resource('dynamodb')
 
     table = dynamodb.create_table(
-        table_name=table_name,
+        TableName=table_name,
         KeySchema=[
             {
                 "AttributeName": "Name",
@@ -38,7 +38,9 @@ def create_table(table_name):
     return table
 
 if __name__ == '__main__':
-    table = create_table("Employees")
+    # table = create_table("Employees")
+    dynamodb = boto3.resource('dynamodb')
+    table = dynamodb.Table("Employees")
 
     # Create Operation
     table.put_item(
@@ -71,5 +73,5 @@ if __name__ == '__main__':
 
     # To check the status of the table
     dynamodb = boto3.resource('dynamodb')
-    dynamodb.table('Employees')
+    dynamodb.Table('Employees')
     print("Table status:", table.table_status)

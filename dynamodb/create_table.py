@@ -39,5 +39,5 @@ if __name__ == '__main__':
     
     # To check the status of the table
     dynamodb = boto3.resource('dynamodb')
-    dynamodb.table('Movies')
+    dynamodb.Table('Movies')
     print("Table status:", table.table_status)
