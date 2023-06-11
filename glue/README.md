@@ -51,3 +51,22 @@ Glue Studio provides a way to create a job with no or minimal coding.
 * You can check the run details under the Runs tab.
 
 You can verify the output in the target location. (If S3 use S3 Select Query to query the data)
+
+## Glue DataBrew
+
+**How to preprocess using Glue DataBrew**
+
+Glue DataBrew provides a way to preprocess the data without writing any code. It is a visual interface to perform data preparation tasks. It provides appromixately 250 transformations, like anomaly detection, data validation, data cleansing, data normalization, and so on.
+
+* Head to the Glue DataBrew page
+* Create the Dataset
+    * Select the source(in our case it is S3)
+    * Provide the link to the S3 bucket
+    * Click on the **Create Dataset**
+* Now we need to do a project
+    * Click on **Create Project**
+    * Enter a name for the project(it will also create a recipe with a similar name)
+    * Select the dataset which you created earlier
+    * Create a role for this project
+        * Create an IAM role
+    * Click on **Create Project**
