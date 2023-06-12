@@ -39,3 +39,10 @@ Before the start of this process, you need to perform a few things, They are:
 * Click on **Create function**
 
 * Under the Code tab, you can see the code editor, where you can place from the file csv2table.py
+* Click on deploy to deploy the function
+
+As it is a serverless application, we need to create a trigger to invoke the function. Here, we are going to use S3 as the trigger.
+
+* Select the PUT event, as the trigger.
+* Give the suffix as .csv, to only invoke the function when a csv file is uploaded to the bucket.
+* Click on **Add**, to create the trigger.
