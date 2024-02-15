@@ -17,3 +17,7 @@ To interact with the AWS, via Python, you have to install `boto3`
 ```bash
 $ pip3 install boto3
 ```
+
+## Resources
+
+* [https://aws-tc-largeobjects.s3.us-west-2.amazonaws.com/DEV-AWS-MO-CPE/Exercise+1+%E2%80%93+Explore+the+AWS+Management+Console/story.html](https://aws-tc-largeobjects.s3.us-west-2.amazonaws.com/DEV-AWS-MO-CPE/Exercise+1+%E2%80%93+Explore+the+AWS+Management+Console/story.html)

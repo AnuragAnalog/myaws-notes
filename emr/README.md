@@ -32,3 +32,5 @@ Once you are connected to the cluster, you can submit the job using the followin
 ```bash
 spark-submit <path to the python file>
 ```
+
+**_Once everything is done, you can terminate the cluster by clicking on the Terminate button._**
