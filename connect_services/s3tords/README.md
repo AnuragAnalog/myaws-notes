@@ -30,3 +30,4 @@
 > [How to add Pandas layer](https://www.youtube.com/watch?v=x9VT67dztpI), [How to add sqlalchemy layer](https://stackoverflow.com/questions/68189528/using-sqlalchemy-in-aws-lambda)
 
 After setting up all the services, you can use the code from the file `load_s3tords.py` to load any csv file from s3 to rds.
+The code is used to load one file into the database, you can tailor the code based on your specific needs.
